@@ -2,28 +2,29 @@
 
 **首先，从官方网站下载python3解释器：**
 
-   		[root@zhangyz tools]# wget https://www.python.org/downloads/release/Python-3.6.1.tgz 
-		[root@zhangyz tools]# tar -xf Python-3.6.1.tgz
-		[root@zhangyz tools]# cd Python-3.6.1
+   		[root@zhangyz tools]# wget https://www.python.org/downloads/release/Python-3.4.1.tgz 
+		[root@zhangyz tools]# tar -xf Python-3.4.1.tgz
+		[root@zhangyz tools]# cd Python-3.4.1
 
 **然后就可以进行安装了：**
 
-		[root@zhangyz tools]# ./configure --prefix=/usr/local/python36
+		[root@zhangyz tools]# ./configure --prefix=/usr/local/python34
 		[root@zhangyz tools]# # ......
 		[root@zhangyz tools]# make && make install
 
 **安装完成之后，可以生成一个环境变量这样就可以直接调用python了**
 
-		[root@zhangyz tools]# export PATH=$PATH:/usr/local/python36/bin
+		[root@zhangyz tools]# export PATH=$PATH:/usr/local/python34/bin
 		[root@zhangyz tools]# python3
 		[GCC 4.4.7 20120313 (Red Hat 4.4.7-18)] on linux
 		Type "help", "copyright", "credits" or "license" for more information
 		>>>
+		
 
 **这些都非常的简单,最重要的还是安装python第三方的软件包，python之所以有特色就是因为这些软件包而变得丰富多彩**
  
 		[root@zhangyz tools]# python3
-		python3            python3.6          python3.6-config   python3.6m         python3.6m-config  python3-config   
+		python3            python3.4          python3.4-config   python3.4m         python3.4m-config  python3-config   
 		[root@zhangyz tools]# pip3
 		pip3    pip3.4  
 
@@ -136,8 +137,8 @@
 
 		[root@zhangyz tools]# pip3 install django
 		[root@zhangyz tools]# pip3 install django
-		Requirement already satisfied: django in /usr/local/python36/lib/python3.6/site-packages
-		Requirement already satisfied: pytz in /usr/local/python36/lib/python3.6/site-packages (from django)
+		Requirement already satisfied: django in /usr/local/python34/lib/python3.4/site-packages
+		Requirement already satisfied: pytz in /usr/local/python34/lib/python3.4/site-packages (from django)
 
 		# 卸载一些python的第三方包方法		
 		[root@zhangyz tools]# pip3 uninstall django -y
@@ -149,6 +150,37 @@
 > **python3 安装mysqldb 和 连接mysql驱动的第三方包安装如下两个包就好**
 
 		[root@zhangyz tools]# pip3 install pymysql
+		Downloading/unpacking pymysql
+		  Downloading PyMySQL-0.7.11-py2.py3-none-any.whl (78kB): 78kB downloaded
+		Installing collected packages: pymysql
+		Successfully installed pymysql
+		Cleaning up...
+
 		[root@zhangyz tools]# pip3 install mysqlclient
+		Downloading/unpacking mysqlclient
+		  Downloading mysqlclient-1.3.10.tar.gz (82kB): 82kB downloaded
+		  Running setup.py (path:/tmp/pip_build_root/mysqlclient/setup.py) egg_info for package mysqlclient
+    
+		    warning: no files found matching 'GPL-2.0'
+		Installing collected packages: mysqlclient
+		  Running setup.py install for mysqlclient
+		    building '_mysql' extension
+		    gcc -pthread -Werror=declaration-after-statement -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -Dversion_info=(1,3,10,'final',0) -D__version__=1.3.10 -I/usr/include/mysql -I/usr/local/python34/include/python3.4m -c _mysql.c -o build/temp.linux-x86_64-3.4/_mysql.o -g -pipe -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -fno-strict-aliasing -fwrapv -fPIC -DUNIV_LINUX -DUNIV_LINUX
+		    In file included from /usr/local/python34/include/python3.4m/Python.h:8,
+		                     from _mysql.c:40:
+		    /usr/local/python34/include/python3.4m/pyconfig.h:554:1: warning: "HAVE_MBRTOWC" redefined
+		    In file included from /usr/include/mysql/my_config.h:14,
+		                     from _mysql.c:29:
+		    /usr/include/mysql/my_config_x86_64.h:564:1: warning: this is the location of the previous definition
+		    gcc -pthread -shared build/temp.linux-x86_64-3.4/_mysql.o -L/usr/lib64/mysql -lmysqlclient_r -lz -lpthread -lcrypt -lnsl -lm -lpthread -lssl -lcrypto -o build/lib.linux-x86_64-3.4/_mysql.cpython-34m.so -rdynamic
+		    
+		    warning: no files found matching 'GPL-2.0'
+		Successfully installed mysqlclient
+		Cleaning up...
+
+		如果安装失败 yum -y install mysql-devel mysql
 
 
+
+> **python3 安装 scrapy**
+		
