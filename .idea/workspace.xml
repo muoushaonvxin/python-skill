@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4aab4b0d-b3d7-472a-b621-3e5253aa3481" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/理论技巧/01, 如何在列表,字典,集合中根据条件筛选数据.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/理论技巧/02, 如何为元组当中的每个元素命名，提高程序可读性.md" />
+    <list default="true" id="f51993ee-990b-4bd3-8742-ab722eb2479d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/理论技巧/03, 根据字典中指的大小，对字典中的项进行排序.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/理论技巧/04, 如何快速找到多个字典中的公共键.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/理论技巧/05, 如何让字典保持有序.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/理论技巧/06, 如何实现用户的历史纪录功能.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/理论技巧/07, 如何实现可迭代现象和迭代器对象.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/理论技巧/08, 如何进行反向迭代以及如何实现反向迭代.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/理论技巧/09, 如何对迭代器进行切片操作.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/理论技巧/10, 如何在一个for中迭代多个可迭代对象.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/理论技巧/11, 如何拆分含有多个分隔符的字符串.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python-2.7.13.tgz" afterPath="$PROJECT_DIR$/Python-2.7.13.tgz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/python.iml" afterPath="$PROJECT_DIR$/.idea/python.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python3一些安装包的心得.md" afterPath="$PROJECT_DIR$/python3一些安装包的心得.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/理论技巧/01, 如何在列表,字典,集合中根据条件筛选数据.md" afterPath="$PROJECT_DIR$/理论技巧/01, 如何在列表,字典,集合中根据条件筛选数据.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/理论技巧/02, 如何为元组当中的每个元素命名，提高程序可读性.md" afterPath="$PROJECT_DIR$/理论技巧/02, 如何为元组当中的每个元素命名，提高程序可读性.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,25 +36,12 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="01, 如何在列表,字典,集合中根据条件筛选数据.md" pinned="false" current-in-tab="false">
-        <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/理论技巧/01, 如何在列表,字典,集合中根据条件筛选数据.md">
+      <file leaf-file-name="11, 如何拆分含有多个分隔符的字符串.md" pinned="false" current-in-tab="true">
+        <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/理论技巧/11, 如何拆分含有多个分隔符的字符串.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="170">
-                <caret line="30" column="20" lean-forward="false" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="02, 如何为元组当中的每个元素命名，提高程序可读性.md" pinned="false" current-in-tab="true">
-        <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/理论技巧/02, 如何为元组当中的每个元素命名，提高程序可读性.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="150">
-                <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+              <first_editor relative-caret-position="125">
+                <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -54,8 +57,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/理论技巧/01, 如何在列表,字典,集合中根据条件筛选数据.md" />
-        <option value="$PROJECT_DIR$/理论技巧/02, 如何为元组当中的每个元素命名，提高程序可读性.md" />
+        <option value="$PROJECT_DIR$/理论技巧/04, 如何快速找到多个字典中的公共键.md" />
+        <option value="$PROJECT_DIR$/理论技巧/05, 如何让字典保持有序.md" />
+        <option value="$PROJECT_DIR$/理论技巧/06, 如何实现用户的历史纪录功能.md" />
+        <option value="$PROJECT_DIR$/理论技巧/07, 如何实现可迭代现象和迭代器对象.md" />
+        <option value="$PROJECT_DIR$/理论技巧/08, 如何进行反向迭代以及如何实现反向迭代.md" />
+        <option value="$PROJECT_DIR$/理论技巧/09, 如何对迭代器进行切片操作.md" />
+        <option value="$PROJECT_DIR$/理论技巧/10, 如何在一个for中迭代多个可迭代对象.md" />
+        <option value="$PROJECT_DIR$/理论技巧/11, 如何拆分含有多个分隔符的字符串.md" />
       </list>
     </option>
   </component>
@@ -89,7 +98,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -102,13 +110,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="理论技巧" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
@@ -328,13 +350,16 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4aab4b0d-b3d7-472a-b621-3e5253aa3481" name="Default" comment="" />
-      <created>1505575109737</created>
+      <changelist id="f51993ee-990b-4bd3-8742-ab722eb2479d" name="Default" comment="" />
+      <created>1506087933330</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1505575109737</updated>
+      <updated>1506087933330</updated>
     </task>
     <servers />
   </component>
@@ -342,7 +367,7 @@
     <frame x="-8" y="-8" width="1382" height="723" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15960665" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21984732" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -373,22 +398,99 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/理论技巧/01, 如何在列表,字典,集合中根据条件筛选数据.md">
+    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/理论技巧/03, 根据字典中指的大小，对字典中的项进行排序.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="170">
-            <caret line="30" column="20" lean-forward="false" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/理论技巧/02, 如何为元组当中的每个元素命名，提高程序可读性.md">
+    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/理论技巧/04, 如何快速找到多个字典中的公共键.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="150">
-            <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+          <first_editor relative-caret-position="413">
+            <caret line="41" column="4" lean-forward="false" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/理论技巧/05, 如何让字典保持有序.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="413">
+            <caret line="56" column="12" lean-forward="false" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/理论技巧/07, 如何实现可迭代现象和迭代器对象.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="213">
+            <caret line="122" column="11" lean-forward="false" selection-start-line="122" selection-start-column="11" selection-end-line="122" selection-end-column="11" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/理论技巧/06, 如何实现用户的历史纪录功能.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="413">
+            <caret line="51" column="4" lean-forward="false" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/理论技巧/08, 如何进行反向迭代以及如何实现反向迭代.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="413">
+            <caret line="46" column="12" lean-forward="false" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/理论技巧/09, 如何对迭代器进行切片操作.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="413">
+            <caret line="44" column="8" lean-forward="false" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/理论技巧/10, 如何在一个for中迭代多个可迭代对象.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="407">
+            <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:$PROJECT_DIR$/../..//$PROJECT_DIR$/理论技巧/11, 如何拆分含有多个分隔符的字符串.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="125">
+            <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
             <folding />
           </first_editor>
           <second_editor />
