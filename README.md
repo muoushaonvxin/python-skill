@@ -1,10 +1,11 @@
-# 1. 本人整理的关于安装python3解释器的方法
+### 整理关于安装python3解释器的方法
 
-**首先，从官方网站下载python3解释器：**
-
-   		[root@zhangyz tools]# wget https://www.python.org/downloads/release/Python-3.4.1.tgz 
-		[root@zhangyz tools]# tar -xf Python-3.4.1.tgz
-		[root@zhangyz tools]# cd Python-3.4.1
+1.首先从官方网站下载python3解释器
+```shell
+[root@zhangyz tools]# wget https://www.python.org/downloads/release/Python-3.4.1.tgz 
+[root@zhangyz tools]# tar -xf Python-3.4.1.tgz
+[root@zhangyz tools]# cd Python-3.4.1
+```
 
 **然后就可以进行安装了：**
 
