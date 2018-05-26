@@ -150,18 +150,15 @@ Requirement already satisfied: pytz in /usr/local/python34/lib/python3.4/site-pa
 [root@zhangyz tools]# pip3 uninstall django -y
 ```
 
-
-
-
-> **python3 安装mysqldb 和 连接mysql驱动的第三方包安装如下两个包就好**
-
-		[root@zhangyz tools]# pip3 install pymysql
-		Downloading/unpacking pymysql
-		  Downloading PyMySQL-0.7.11-py2.py3-none-any.whl (78kB): 78kB downloaded
-		Installing collected packages: pymysql
-		Successfully installed pymysql
-		Cleaning up...
-
+8.python3安装mysqldb和连接mysql驱动的第三方包安装方法
+```shell
+[root@zhangyz tools]# pip3 install pymysql
+Downloading/unpacking pymysql
+  Downloading PyMySQL-0.7.11-py2.py3-none-any.whl (78kB): 78kB downloaded
+Installing collected packages: pymysql
+Successfully installed pymysql
+Cleaning up...
+```
 		[root@zhangyz tools]# pip3 install mysqlclient
 		Downloading/unpacking mysqlclient
 		  Downloading mysqlclient-1.3.10.tar.gz (82kB): 82kB downloaded
