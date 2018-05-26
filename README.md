@@ -137,22 +137,20 @@ zipstream (1.1.4)
 zope.interface (4.4.2)
 ```
 
+6.python3编译安装的话自带了pip这个软件该软件是专门安装python第三方包的软件
+```shell
+[root@zhangyz tools]# pip3 install django
+[root@zhangyz tools]# pip3 install django
+Requirement already satisfied: django in /usr/local/python34/lib/python3.4/site-packages
+Requirement already satisfied: pytz in /usr/local/python34/lib/python3.4/site-packages (from django)
+```
 
-----------
-
- 
-> **python3 编译安装的话自带了pip 这个软件,该软件是专门安装python第三方包的软件**
-
-		[root@zhangyz tools]# pip3 install django
-		[root@zhangyz tools]# pip3 install django
-		Requirement already satisfied: django in /usr/local/python34/lib/python3.4/site-packages
-		Requirement already satisfied: pytz in /usr/local/python34/lib/python3.4/site-packages (from django)
-
-		# 卸载一些python的第三方包方法		
-		[root@zhangyz tools]# pip3 uninstall django -y
+7.卸载一些python的第三方包方法		
+```shell
+[root@zhangyz tools]# pip3 uninstall django -y
+```
 
 
-***
 
 
 > **python3 安装mysqldb 和 连接mysql驱动的第三方包安装如下两个包就好**
