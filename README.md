@@ -185,9 +185,14 @@ Successfully installed mysqlclient
 Cleaning up...
 ```
 
-		如果安装失败 yum -y install mysql-devel mysql
+如果安装失败 
+```shell
+[root@zhangyz tools]# yum -y install mysql-devel mysql
+```
 
 
+10.python3安装scrapy第三方包方法
+```shell
 
-> **python3 安装 scrapy**
+```
 		
