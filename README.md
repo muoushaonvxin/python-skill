@@ -30,7 +30,7 @@ Type "help", "copyright", "credits" or "license" for more information
 4.最重要的是安装python第三方的软件包python之所以有特色就是因为这些软件包而变得丰富多彩
 ```shell
 [root@zhangyz tools]# python3
-python3            python3.4          python3.4-config   python3.4m         python3.4m-config  python3-config   
+python3            python3.4          python3.4-config   python3.4m           
 [root@zhangyz tools]# pip3
 pip3    pip3.4  
 ```
