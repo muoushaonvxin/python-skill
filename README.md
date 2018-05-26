@@ -9,20 +9,21 @@
 [root@zhangyz tools]# cd Python-3.4.1
 ```
 
-**然后就可以进行安装了：**
+2.然后就可以进行安装了
+```shell
+[root@zhangyz tools]# ./configure --prefix=/usr/local/python34
+[root@zhangyz tools]# # ......
+[root@zhangyz tools]# make && make install
+```
 
-		[root@zhangyz tools]# ./configure --prefix=/usr/local/python34
-		[root@zhangyz tools]# # ......
-		[root@zhangyz tools]# make && make install
-
-**安装完成之后，可以生成一个环境变量这样就可以直接调用python了**
-
-		[root@zhangyz tools]# export PATH=$PATH:/usr/local/python34/bin
-		[root@zhangyz tools]# python3
-		[GCC 4.4.7 20120313 (Red Hat 4.4.7-18)] on linux
-		Type "help", "copyright", "credits" or "license" for more information
-		>>>
-		
+3.安装完成之后可以生成一个环境变量这样就可以直接调用python了
+```shell
+[root@zhangyz tools]# export PATH=$PATH:/usr/local/python34/bin
+[root@zhangyz tools]# python3
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-18)] on linux
+Type "help", "copyright", "credits" or "license" for more information
+>>>
+```
 
 **这些都非常的简单,最重要的还是安装python第三方的软件包，python之所以有特色就是因为这些软件包而变得丰富多彩**
  
