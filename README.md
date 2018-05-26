@@ -27,12 +27,13 @@ Type "help", "copyright", "credits" or "license" for more information
 >>>
 ```
 
-**这些都非常的简单,最重要的还是安装python第三方的软件包，python之所以有特色就是因为这些软件包而变得丰富多彩**
- 
-		[root@zhangyz tools]# python3
-		python3            python3.4          python3.4-config   python3.4m         python3.4m-config  python3-config   
-		[root@zhangyz tools]# pip3
-		pip3    pip3.4  
+4.最重要的是安装python第三方的软件包python之所以有特色就是因为这些软件包而变得丰富多彩
+```shell
+[root@zhangyz tools]# python3
+python3            python3.4          python3.4-config   python3.4m         python3.4m-config  python3-config   
+[root@zhangyz tools]# pip3
+pip3    pip3.4  
+```
 
 		# 列出常用的一些软件包,这里是我自己动手装的
 		[root@zhangyz tools]# pip3 list
