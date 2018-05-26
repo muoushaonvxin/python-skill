@@ -159,27 +159,31 @@ Installing collected packages: pymysql
 Successfully installed pymysql
 Cleaning up...
 ```
-		[root@zhangyz tools]# pip3 install mysqlclient
-		Downloading/unpacking mysqlclient
-		  Downloading mysqlclient-1.3.10.tar.gz (82kB): 82kB downloaded
-		  Running setup.py (path:/tmp/pip_build_root/mysqlclient/setup.py) egg_info for package mysqlclient
-    
-		    warning: no files found matching 'GPL-2.0'
-		Installing collected packages: mysqlclient
-		  Running setup.py install for mysqlclient
-		    building '_mysql' extension
-		    gcc -pthread -Werror=declaration-after-statement -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -Dversion_info=(1,3,10,'final',0) -D__version__=1.3.10 -I/usr/include/mysql -I/usr/local/python34/include/python3.4m -c _mysql.c -o build/temp.linux-x86_64-3.4/_mysql.o -g -pipe -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -fno-strict-aliasing -fwrapv -fPIC -DUNIV_LINUX -DUNIV_LINUX
-		    In file included from /usr/local/python34/include/python3.4m/Python.h:8,
-		                     from _mysql.c:40:
-		    /usr/local/python34/include/python3.4m/pyconfig.h:554:1: warning: "HAVE_MBRTOWC" redefined
-		    In file included from /usr/include/mysql/my_config.h:14,
-		                     from _mysql.c:29:
-		    /usr/include/mysql/my_config_x86_64.h:564:1: warning: this is the location of the previous definition
-		    gcc -pthread -shared build/temp.linux-x86_64-3.4/_mysql.o -L/usr/lib64/mysql -lmysqlclient_r -lz -lpthread -lcrypt -lnsl -lm -lpthread -lssl -lcrypto -o build/lib.linux-x86_64-3.4/_mysql.cpython-34m.so -rdynamic
-		    
-		    warning: no files found matching 'GPL-2.0'
-		Successfully installed mysqlclient
-		Cleaning up...
+
+9.python3安装mysqlclient第三方包方法
+```shell
+[root@zhangyz tools]# pip3 install mysqlclient
+Downloading/unpacking mysqlclient
+  Downloading mysqlclient-1.3.10.tar.gz (82kB): 82kB downloaded
+  Running setup.py (path:/tmp/pip_build_root/mysqlclient/setup.py) egg_info for package mysqlclient
+
+    warning: no files found matching 'GPL-2.0'
+Installing collected packages: mysqlclient
+  Running setup.py install for mysqlclient
+    building '_mysql' extension
+    gcc -pthread -Werror=declaration-after-statement -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -Dversion_info=(1,3,10,'final',0) -D__version__=1.3.10 -I/usr/include/mysql -I/usr/local/python34/include/python3.4m -c _mysql.c -o build/temp.linux-x86_64-3.4/_mysql.o -g -pipe -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -fno-strict-aliasing -fwrapv -fPIC -DUNIV_LINUX -DUNIV_LINUX
+    In file included from /usr/local/python34/include/python3.4m/Python.h:8,
+		     from _mysql.c:40:
+    /usr/local/python34/include/python3.4m/pyconfig.h:554:1: warning: "HAVE_MBRTOWC" redefined
+    In file included from /usr/include/mysql/my_config.h:14,
+		     from _mysql.c:29:
+    /usr/include/mysql/my_config_x86_64.h:564:1: warning: this is the location of the previous definition
+    gcc -pthread -shared build/temp.linux-x86_64-3.4/_mysql.o -L/usr/lib64/mysql -lmysqlclient_r -lz -lpthread -lcrypt -lnsl -lm -lpthread -lssl -lcrypto -o build/lib.linux-x86_64-3.4/_mysql.cpython-34m.so -rdynamic
+
+    warning: no files found matching 'GPL-2.0'
+Successfully installed mysqlclient
+Cleaning up...
+```
 
 		如果安装失败 yum -y install mysql-devel mysql
 
