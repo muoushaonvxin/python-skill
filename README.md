@@ -2,6 +2,8 @@
 
 <br>
 
+<br>
+
 1.首先从官方网站下载python3解释器
 ```shell
 [root@zhangyz tools]# wget https://www.python.org/downloads/release/Python-3.4.1.tgz 
