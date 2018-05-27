@@ -1,4 +1,9 @@
-安装tensorflow
+## 安装tensorflow
+
+<br>
+
+<br>
+
 ```shell
 [root@zhangyz ~]# /usr/local/python34/bin/pip3 install -i https://pypi.douban.com/simple tensorflow
 Collecting tensorflow
