@@ -189,10 +189,4 @@ Cleaning up...
 ```shell
 [root@zhangyz tools]# yum -y install mysql-devel mysql
 ```
-
-
-10.python3安装scrapy第三方包方法
-```shell
-
-```
 		
