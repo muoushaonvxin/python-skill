@@ -1,4 +1,16 @@
-    import redis
+首先安装redis模块
+
+```shell
+[root@zhangyz ~]# pip3 install redis
+Collecting redis
+  Downloading https://files.pythonhosted.org/packages/3b/f6/7a76333cf0b9251ecf49efff635015171843d9b977e4ffcf59f9c4428052/redis-2.10.6-py2.py3-none-any.whl (64kB)
+    100% |████████████████████████████████| 71kB 595kB/s 
+Installing collected packages: redis
+Successfully installed redis-2.10.6
+```
+
+
+import redis
         
     r = redis.Redis(host='8.8.8.128')
     print(r.get("name"))
