@@ -63,80 +63,58 @@ r.lrange("name_list", 0, -1)
 * nx: 如果设置为True, 则只有name不存在时当前set操作才执行
 * xx: 如果设置为True, 则只有name存在时当前set操作才执行
         	
-    redis 的订阅和发布
+## Redis的订阅和发布
 
-	订阅者：
-		#!/usr/bin/env python
-		# -*- coding: utf8 -*-
-		
-		from monitor.RedisHelper import RedisHelper
-		
-		obj = RedisHelper()
-		redis_sub = obj.subscribe() # 真正进行接收
-		
-		while True:
-			msg = redis_sub.parse_response()
-			print(msg)
-			
-			
-	发布者：
-		#!/usr/bin/env python
-		# -*- coding: utf8 -*-
-		
-		from monitor.RedisHelper import RedisHelper
-		
-		obj = RedisHelper()
-		obj.public('hello')
-		
-	
-	-----------------------------------------------------------------
-	
-	import redis
-	
-	class RedisHelper(object):
-	
-		def __init__(self):
-			self.__conn = redis.Redis(host='10.211.55.123', port=6379, db=0)
-			self.chan_sub = 'fm104.5'
-			self.chan_pub = 'fm104.5'
-			
-		def public(self, msg):
-			self.__conn.publish(self.chan_pub, msg)
-			return True
-			
-		def subscribe(self):
-			# 打开一个对应的频道
-			pub = self.__conn.pubsub()
-			pub.subscribe(self.chan_sub)
-			pub.parse_response() # 准备接收
-			return pub
-			
-		
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+订阅者
+
+```python
+#!/usr/bin/env python
+# -*- coding: utf8 -*-
+
+from monitor.RedisHelper import RedisHelper
+
+obj = RedisHelper()
+redis_sub = obj.subscribe() # 真正进行接收
+
+while True:
+    msg = redis_sub.parse_response()
+    print(msg)
+```
+
+发布者
+
+```python
+#!/usr/bin/env python
+# -*- coding: utf8 -*-
+
+from monitor.RedisHelper import RedisHelper
+
+obj = RedisHelper()
+obj.public('hello')
+```
+
+
+```example RedisHelper.py
+
+import redis
+
+class RedisHelper(object):
+
+    def __init__(self):
+        self.__conn = redis.Redis(host='10.211.55.123', port=6379, db=0)
+        self.chan_sub = 'fm104.5'
+        self.chan_pub = 'fm104.5'
+
+    def public(self, msg):
+	self.__conn.publish(self.chan_pub, msg)
+	return True
+
+    def subscribe(self):
+	# 打开一个对应的频道
+	pub = self.__conn.pubsub()
+	pub.subscribe(self.chan_sub)
+	pub.parse_response() # 准备接收
+	return pub
+```
+
+该代码的作用是可以一直不断的接收消息
