@@ -63,7 +63,11 @@ r.lrange("name_list", 0, -1)
 * nx: 如果设置为True, 则只有name不存在时当前set操作才执行
 * xx: 如果设置为True, 则只有name存在时当前set操作才执行
         	
+<br/>
+
 ## Redis的订阅和发布
+
+<br/>
 
 订阅者
 
