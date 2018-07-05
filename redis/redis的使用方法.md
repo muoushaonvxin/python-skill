@@ -93,8 +93,9 @@ obj = RedisHelper()
 obj.public('hello')
 ```
 
+消息发布和订阅实现类
 
-```example RedisHelper.py
+```python
 
 import redis
 
