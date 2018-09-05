@@ -32,10 +32,8 @@ channel = connection.channel()
 ```python
 message = collections.OrderedDict()
 message['data'] = 'hello world'
-
 channel.exchange_declare(exchange='250test', exchange_type='direct', durable=True)
-serverity = "info"
-channel.basic_publish(exchange='250test', routing_key=serverity, body=json.dumps(message))
+channel.basic_publish(exchange='250test', routing_key="info", body=json.dumps(message))
 ```
 
 发送完成之后使用 close() 方法就可以和rabbitmq断开连接
