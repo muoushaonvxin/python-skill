@@ -15,3 +15,9 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ```
 
+使用pika模块连接rabbitmq中间件方法
+```python
+import pika
+
+
+```
