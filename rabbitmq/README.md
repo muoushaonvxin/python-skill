@@ -42,3 +42,30 @@ connection.close()
 ```
 
 -----------------------------------------------------------------------------
+
+rabbitmq可以存放消息, 也可以将消息送给相关的消费程序
+```python
+import pika
+import json
+
+credentials = pika.PlainCredentials("guest", "guest")
+connection = pika.BlockingConnection(pika.ConnectionParameters('192.168.1.1', 5672, '/', credentials))
+channel = connection.channel()
+```
+
+和rabbitmq当中的交换机和队列做绑定
+```python
+channel.exchange_declare(exchange='250test', exchange_type='direct', durable=True)
+channel.queue_declare(exclusive=True)
+channel.queue_bind(exchange='250testr', queue='250test', routing_key='info')
+```
+
+编写接收payload(消息体)的函数, 关联channel开始消费队列当中的消息
+```python
+def callback(ch, method, properties, body):
+    var01 = json.loads(body.decode())
+    print(var01)
+    
+channel.basic_consume(callback, queue='250test', no_ack=True)
+channel.start_consuming()
+```
