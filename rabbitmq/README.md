@@ -20,8 +20,25 @@ Type "help", "copyright", "credits" or "license" for more information.
 以下是使用pika模块和rabbitmq中间件进行连接的代码
 ```python
 import pika
+import collections
+import json
 
 credentials = pika.PlainCredentials("guest", "guest")
 connection = pika.BlockingConnection(pika.ConnectionParameters("192.168.1.1", 5672, '/', credentials))
 channel = connection.channel()
+```
+
+连上了rabbitmq之后需要对当中的队列进行相关操作, 所以需要调用pika当中的api方法去对这些数据做操作
+```python
+message = collections.OrderedDict()
+message['data'] = 'hello world'
+
+channel.exchange_declare(exchange='250test', exchange_type='direct', durable=True)
+serverity = "info"
+channel.basic_publish(exchange='250test', routing_key=serverity, body=json.dumps(message))
+```
+
+发送完成之后使用 close() 方法就可以和rabbitmq断开连接
+```python
+connection.close()
 ```
