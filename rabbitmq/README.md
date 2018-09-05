@@ -15,9 +15,11 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ```
 
-使用pika模块连接rabbitmq中间件方法
+以下是使用pika模块和rabbitmq中间件进行连接的代码
 ```python
 import pika
 
-
+credentials = pika.PlainCredentials("guest", "guest")
+connection = pika.BlockingConnection(pika.ConnectionParameters("192.168.1.1", 5672, '/', credentials))
+channel = connection.channel()
 ```
