@@ -57,7 +57,7 @@ channel = connection.channel()
 ```python
 channel.exchange_declare(exchange='250test', exchange_type='direct', durable=True)
 channel.queue_declare(exclusive=True)
-channel.queue_bind(exchange='250testr', queue='250test', routing_key='info')
+channel.queue_bind(exchange='250test', queue='test', routing_key='info')
 ```
 
 编写接收payload(消息体)的函数, 关联channel开始消费队列当中的消息
