@@ -42,3 +42,5 @@ channel.basic_publish(exchange='250test', routing_key=serverity, body=json.dumps
 ```python
 connection.close()
 ```
+
+-----------------------------------------------------------------------------
