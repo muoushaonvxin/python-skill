@@ -69,3 +69,19 @@ def callback(ch, method, properties, body):
 channel.basic_consume(callback, queue='250test', no_ack=True)
 channel.start_consuming()
 ```
+
+如果想要一条一条的接收可以使用 channel.basic_get(queue=queue_name, no_ack=True) 的方式来实现
+
+```python
+import pika
+import json
+
+credentials = pika.PlainCredentials("guest", "guest")
+connection = pika.BlockingConnection(pika.ConnectionParameters('192.168.1.1', 5672, '/', credentials))
+channel = connection.channel()
+response = channel.basic_get("Queue111112", no_ack=True)
+print(response)
+
+// 输出的结果为:
+(<Basic.GetOk(['delivery_tag=1', 'exchange=zhenshiceshi', 'message_count=997', 'redelivered=False', 'routing_key=111112'])>, <BasicProperties>, b'{"aaa": 123, "bbb": 456}')
+```
