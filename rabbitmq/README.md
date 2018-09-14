@@ -62,7 +62,7 @@ channel.queue_bind(exchange='250test', queue='test', routing_key='info')
 
 编写接收payload(消息体)的函数, 关联channel开始消费队列当中的消息
 ```python
-def callback(ch, method, properties, body):
+def callback(channel, method, properties, body):
     var01 = json.loads(body.decode())
     print(var01)
     
