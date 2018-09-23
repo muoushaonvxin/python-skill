@@ -42,10 +42,10 @@ Successfully installed backports-abc-0.5 tornado-5.1.1
 import tornado.web
 import tornado.ioloop
 
+# 一个业务处理类
 class IndexHandler(tornado.web.RequestHandler):
     def get(self, *args, **kwargs):
         self.write("ok good idea.")
-
 
 if __name__ == "__main__":
     app = tornado.web.Application(
