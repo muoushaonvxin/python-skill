@@ -62,7 +62,7 @@ tornado用法简介
 import tornado.web # tornado的基础web框架模块
 ```
 
-让tornado使用一个端口运行服务
+让tornado运行web服务
 ```shell
 import tornado.ioloop # tornado的核心IO循环模块, 封装了Linux的epoll和BSD的kqueue, 它是tornado框架高效的基础
 ```
