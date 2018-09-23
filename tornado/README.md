@@ -86,5 +86,7 @@ if __name__ == "__main__":
 
 tornado开启端口监听让用户能够访问web服务器
 ```shell
-tornado.ioloop.IOLoop.current().start() # IOLoop.current(): 当回当前线程的IOLoop的实例
+# IOLoop.current(): 当回当前线程的IOLoop的实例
+# IOLoop.start(): 启动IOLoop实例的 I/O 循环
+tornado.ioloop.IOLoop.current().start() 
 ```
