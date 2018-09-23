@@ -20,3 +20,16 @@ Tornado全称为 Tornado Web Server, 是一种 Web 服务器软件的开源版�
 tornado在设计之初就考虑到了性能因素, 旨在解决C10K的问题, 这样的问题, 这样设计使得其成为一个拥有非常高性能的解决方案.
 
 
+#### 安装tornado扩展安装包
+
+```shell
+[root@zhangyz ~]# /usr/local/python34/bin/pip3 install tornado
+Collecting tornado
+  Downloading https://files.pythonhosted.org/packages/e6/78/6e7b5af12c12bdf38ca9bfe863fcaf53dc10430a312d0324e76c1e5ca426/tornado-5.1.1.tar.gz (516kB)
+    100% |████████████████████████████████| 522kB 233kB/s 
+Collecting backports_abc>=0.4 (from tornado)
+  Downloading https://files.pythonhosted.org/packages/7d/56/6f3ac1b816d0cd8994e83d0c4e55bc64567532f7dc543378bd87f81cebc7/backports_abc-0.5-py2.py3-none-any.whl
+Installing collected packages: backports-abc, tornado
+  Running setup.py install for tornado ... done
+Successfully installed backports-abc-0.5 tornado-5.1.1
+```
