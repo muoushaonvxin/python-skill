@@ -56,3 +56,14 @@ if __name__ == "__main__":
     app.listen(8000)
     tornado.ioloop.IOLoop.current().start()
 ```
+
+tornado用法简介
+```shell
+import tornado.web # tornado的基础web框架模块
+```
+
+让tornado使用一个端口运行服务
+```shell
+import tornado.ioloop # tornado的核心运行模块
+```
+
