@@ -35,3 +35,24 @@ Installing collected packages: backports-abc, tornado
   Running setup.py install for tornado ... done
 Successfully installed backports-abc-0.5 tornado-5.1.1
 ```
+
+#### tornado小段代码测试 
+
+```python
+import tornado.web
+import tornado.ioloop
+
+class IndexHandler(tornado.web.RequestHandler):
+    def get(self, *args, **kwargs):
+        self.write("ok good idea.")
+
+
+if __name__ == "__main__":
+    app = tornado.web.Application(
+        [
+            (r"/", IndexHandler)
+        ]
+    )
+    app.listen(8000)
+    tornado.ioloop.IOLoop.current().start()
+```
