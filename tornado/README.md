@@ -67,6 +67,17 @@ import tornado.web # tornado的基础web框架模块
 import tornado.ioloop # tornado的核心IO循环模块, 封装了Linux的epoll和BSD的kqueue, 它是tornado框架高效的基础
 ```
 
+建立处理业务逻辑的类对象
+```shell
+import tornado.web
+import tornado.ioloop
+
+# 一个业务处理类
+class IndexHandler(tornado.web.RequestHandler):
+    def get(self, *args, **kwargs):
+        self.write("ok good idea.")
+```
+
 tornado处理业务逻辑的对应url设置
 ```shell
 import tornado.web
