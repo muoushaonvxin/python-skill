@@ -15,3 +15,21 @@ class ORM(object):
 		sql = "insert into " + tableName + " " + fieldsStr + " values " + valuesStr
 		db = TornadoMySQL()
 		db.insert(sql)
+
+	def delete(self):
+		pass
+
+	def update(self):
+		pass
+
+	@classmethod
+	def all(cls):
+		tableName = (cls.__name__).lower()
+		sql = "select * from " + tableName
+		db = TornadoMySQL()
+		print(sql)
+		return db.get_all_obj(sql, tableName)
+
+	@classmethod
+	def filter(cls):
+		pass
