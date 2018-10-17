@@ -2,7 +2,9 @@
 ```python
 #!/usr/local/python34/bin/python3
 #-*- encoding: utf-8 -*-
-import os, sys
+
+import os
+import sys
 import smtplib
 from smtplib import SMTP_SSL
 from email.header import Header
