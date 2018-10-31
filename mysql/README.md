@@ -11,3 +11,14 @@ Requirement already satisfied: idna>=2.1 in /usr/local/python34/lib/python3.4/si
 Requirement already satisfied: cffi!=1.11.3,>=1.7 in /usr/local/python34/lib/python3.4/site-packages (from cryptography->pymysql) (1.11.5)
 Requirement already satisfied: pycparser in /usr/local/python34/lib/python3.4/site-packages (from cffi!=1.11.3,>=1.7->cryptography->pymysql) (2.19)
 ```
+
+进入python的终端使用pymysql模块测试是否安装成功
+
+```shell
+[root@zhangyz ~]# /usr/local/python34/bin/python3
+Python 3.4.1 (default, Nov  2 2017, 12:27:39) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-18)] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import pymysql
+>>> 
+```
