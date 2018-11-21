@@ -11,10 +11,10 @@ from email.header import Header
 from email.mime.text import MIMEText
 
 mailInfo = {
-    "from": "support@seliencepuppet.com",
+    "from": "support@qq.com",
     "to": sys.argv[1],
     "hostname": "smtp.qq.com",
-    "username": "support@seliencepuppet.com",
+    "username": "support@qq.com",
     "password": "1234567890",
     "mailsubject": sys.argv[2],
     "mailtext": sys.argv[3],
