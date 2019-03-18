@@ -85,3 +85,16 @@ print(response)
 // 输出的结果为:
 (<Basic.GetOk(['delivery_tag=1', 'exchange=zhenshiceshi', 'message_count=997', 'redelivered=False', 'routing_key=111112'])>, <BasicProperties>, b'{"aaa": 123, "bbb": 456}')
 ```
+
+将某个队列从当前的交换机当中取消绑定
+
+```python
+import pika
+
+credentials = pika.PlainCredentials("guest", "guest")
+connection = pika.BlockingConnection(pika.ConnectionParameters('192.168.1.1', 5672, '/', credentials))
+channel = connection.channel()
+channel.queue_unbind(exchange='ExTest.Fan', queue='QueueRecv', routing_key='')
+channel.close()
+connection.close()
+```
