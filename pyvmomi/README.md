@@ -1,4 +1,8 @@
 
+### 安装必要模块pyvmomi
+
+pyvmomi 该模块是专门用来管理esxi虚拟机的，可以用该模块实现相关自动化操作
+
 ```shell
 [root@zhangyz src]# wget https://pypi.python.org/packages/source/p/pyvmomi/pyvmomi-6.0.0.tar.gz
 --2019-08-01 15:23:47--  https://pypi.python.org/packages/source/p/pyvmomi/pyvmomi-6.0.0.tar.gz
